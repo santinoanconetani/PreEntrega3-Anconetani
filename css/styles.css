@@ -1,0 +1,63 @@
+.grilla {
+  display: grid;
+  grid-template-columns: 100px;
+  background-color: black;
+  color:white
+}
+
+/*noticias*/
+.noticias {
+  width: 100px;
+  height: 100px;
+margin: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.nosotros {
+ width: 100px;
+  height: 100px;
+margin: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.caja { 
+  width: 100px;
+  height: 100px;
+margin: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  }
+
+  .nav{
+ width: 100px;
+  height: 100px;
+margin: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  }
+
+  .header {
+   width: 100px;
+  height: 100px;
+margin: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  }
+
