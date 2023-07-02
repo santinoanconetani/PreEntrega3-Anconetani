@@ -1,63 +1,174 @@
-.grilla {
-  display: grid;
-  grid-template-columns: 100px;
-  background-color: black;
-  color:white
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
 }
 
-/*noticias*/
-.noticias {
-  width: 100px;
-  height: 100px;
-margin: 10px;
+body {
   background-color: black;
-  text-align: center;
-  color: white;
-  padding: 5px;
-  font-size: 20px;
 }
 
-.nosotros {
- width: 100px;
-  height: 100px;
-margin: 10px;
-  background-color: black;
-  text-align: center;
+h2 {
   color: white;
-  padding: 5px;
-  font-size: 20px;
 }
 
-.caja { 
-  width: 100px;
-  height: 100px;
-margin: 10px;
-  background-color: black;
+h3 {
+  color:white ;
+}
+
+nav ul {
+  font-size: 25px;
+  width: 94%;
+  list-style-type: none;
   text-align: center;
-  color: white;
-  padding: 5px;
-  font-size: 20px;
+  
+}
+
+nav li {
+  display: inline-flex; 
   }
 
-  .nav{
- width: 100px;
-  height: 100px;
-margin: 10px;
-  background-color: black;
-  text-align: center;
+nav a {
+  text-decoration: none;
   color: white;
+  width: 150px;
+}
+
+nav li:hover {
+  background-color: gray;
+}
+
+p {
+  color: white;
+}
+
+.pelota {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contenido {
+  display: flex;
+  margin: 60px;
+  align-items: center;
   padding: 5px;
-  font-size: 20px;
+  text-align: center;
   }
 
-  .header {
-   width: 100px;
-  height: 100px;
-margin: 10px;
-  background-color: black;
-  text-align: center;
+.titulo-principal {
+  font-size: 40px;
+  background-color: rgb(36, 36, 37);
+}
+
+h4 {
   color: white;
-  padding: 5px;
-  font-size: 20px;
+}
+
+h5 {
+  color: white;
+}
+
+h6 {
+  color: white;
+}
+
+.redes {
+  color: white;
+   list-style-type: none;
+   display: flex;
+   justify-content: flex-end;
+   justify-content: space-between;
+   }
+
+.footer {
+  display: flex;
+  background-color: rgb(27, 27, 27);
+}
+
+.politica {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+}
+
+.bienvenida {
+  background-color: rgb(17, 18, 19);
+}
+
+.titulo-remera {
+   background-color: rgb(32, 29, 31)
+}
+
+.titulo-accesorios {
+ background-color: rgb(48, 43, 45)
+}
+
+.titulo-gorras {
+  background-color: rgb(59, 52, 55);
+}
+
+.gorra-fulbo {
+   width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.collar-fulbo {
+   width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.remera-fulbo {
+   width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tienda-online {
+ display: flex;
+ align-items:center;
+}
+
+.gallery-container {
+ display: grid;
+ grid-template-columns: repeat(4, 2fr);
+ grid-auto-rows: 300px;
+ padding: 20px;
+ grid-gap: 5px;
+}
+
+.gallery-img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:375px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    .redes {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+    }
   }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 350px;
+    padding: 20px;
+    grid-gap: 5px;
+  }
+}
+
+
+
+
 
