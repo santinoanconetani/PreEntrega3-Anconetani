@@ -6,6 +6,7 @@ h1 {
 
 body {
   background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2 {
@@ -149,6 +150,27 @@ h6 {
   object-fit: cover;
 }
 
+.remera-gta {
+    width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mate-mundial {
+   width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.gorra-maradona {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 @media(max-width:375px) {
   .footer {
     display: grid;
@@ -166,8 +188,19 @@ h6 {
     padding: 20px;
     grid-gap: 5px;
   }
+
+  .productos-ejemplos {
+    display: flex; 
+    flex-direction: column;
+    
+  }
 }
 
+.productos-ejemplos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
 
 
 
