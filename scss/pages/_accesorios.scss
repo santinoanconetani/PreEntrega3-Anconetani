@@ -4,4 +4,58 @@
   align-items: center;
   padding: 5px;
   text-align: center;
+}
+
+.bienvenida {
+  background-color: rgb(17, 18, 19);
+}
+
+.titulo-accesorios {
+ background-color: rgb(48, 43, 45)
+}
+
+
+.gallery-container {
+ display: grid;
+ grid-template-columns: repeat(4, 2fr);
+ grid-auto-rows: 300px;
+ padding: 20px;
+ grid-gap: 5px;
+}
+
+.gallery-img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mate-mundial {
+   width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.productos-ejemplos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+
+@media(max-width:480px) {
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 350px;
+    padding: 20px;
+    grid-gap: 5px;
   }
+   .productos-ejemplos {
+    display: flex; 
+    flex-direction: column;
+    
+  }
+}
+

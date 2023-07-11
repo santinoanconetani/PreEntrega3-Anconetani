@@ -21,3 +21,11 @@ nav a {
 nav li:hover {
   background-color: gray;
 }
+
+@media (max-width:480px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) ;
+
+  }
+}

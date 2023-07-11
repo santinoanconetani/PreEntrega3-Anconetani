@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  background-color: rgb(27, 27, 27);
+}
+
+@media (max-width:480px) {
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+    .redes {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+    }
+}
