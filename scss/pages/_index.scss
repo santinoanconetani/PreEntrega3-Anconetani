@@ -1,0 +1,19 @@
+.pelota {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contenido {
+  display: flex;
+  margin: 60px;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  }
+
+  .titulo-principal {
+  font-size: 40px;
+  background-color: rgb(36, 36, 37);
+}
