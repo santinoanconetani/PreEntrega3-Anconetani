@@ -1,19 +1,22 @@
-.contenido {
+/* Mixin para estilos comunes */
+@mixin contenido-styles {
   display: flex;
   margin: 60px;
   align-items: center;
   padding: 5px;
   text-align: center;
-  }
+}
+
+.contenido {
+  @include contenido-styles;
 
   .bienvenida {
-  background-color: rgb(17, 18, 19);
-}
+    background-color: rgb(17, 18, 19);
+  }
 
-
-.titulo-remera {
-   background-color: rgb(32, 29, 31)
-}
+  .titulo-remera {
+    background-color: rgb(32, 29, 31);
+  }
 
 .gallery-container {
  display: grid;
@@ -87,5 +90,7 @@
     flex-direction: column;
     
   }
+}
+
 }
 

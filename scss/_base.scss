@@ -1,58 +1,73 @@
 $c-blanco: white;
 
-h1 {
+// Mixin para establecer el color blanco
+@mixin blanco {
   color: $c-blanco;
+}
+
+h1 {
+  @include blanco;
   text-align: center;
   font-size: 50px;
+
+  // Nesting de selectores para h1
+  h2 {
+    @include blanco;
+  }
+
+  h3 {
+    @include blanco;
+  }
+
+  h4 {
+    @include blanco;
+  }
+
+  h5 {
+    @include blanco;
+  }
+
+  h6 {
+    @include blanco;
+  }
+
+  p {
+    @include blanco;
+  }
 }
 
 body {
   background-color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
-h2 {
-  color: $c-blanco;
+  // Nesting de selectores para body
+  h2, h3, h4, h5, h6, p {
+    @include blanco;
+  }
 }
-
-h3 {
-  color:$c-blanco ;
-}
-
-h4 {
-  color: $c-blanco;
-}
-
-h5 {
-  color: $c-blanco;
-}
-
-h6 {
-  color: $c-blanco;
-}
-
-p {
-  color: $c-blanco;
-}
-
 
 .redes {
-  color: $c-blanco;
-   list-style-type: none;
-   display: flex;
-   justify-content: flex-end;
-   justify-content: space-between;
-   }
-
-.footer {
+  @include blanco;
+  list-style-type: none;
   display: flex;
-  background-color: rgb(27, 27, 27);
+  justify-content: flex-end;
+  justify-content: space-between;
+
+  // Nesting de selectores para .redes
+  & .footer {
+    display: flex;
+    background-color: rgb(27, 27, 27);
+  }
 }
 
 .politica {
- display: flex;
- align-items: center;
- justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  // Nesting de selectores para .politica
+  & .footer {
+    display: flex;
+    background-color: rgb(27, 27, 27);
+  }
 }
-
-

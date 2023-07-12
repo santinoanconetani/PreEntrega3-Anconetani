@@ -1,12 +1,12 @@
-.contenido {
+// Mixin para estilos comunes
+@mixin contenido-styles {
   display: flex;
   margin: 60px;
   align-items: center;
   padding: 5px;
   text-align: center;
-}
 
-.bienvenida {
+  .bienvenida {
   background-color: rgb(17, 18, 19);
 }
 
@@ -89,3 +89,8 @@
   }
 }
 
+}
+
+.contenido {
+  @include contenido-styles;
+}
