@@ -1,5 +1,7 @@
+$c-blanco: white;
+
 h1 {
-  color: white;
+  color: $c-blanco;
   text-align: center;
   font-size: 50px;
 }
@@ -10,32 +12,32 @@ body {
 }
 
 h2 {
-  color: white;
+  color: $c-blanco;
 }
 
 h3 {
-  color:white ;
+  color:$c-blanco ;
 }
 
 h4 {
-  color: white;
+  color: $c-blanco;
 }
 
 h5 {
-  color: white;
+  color: $c-blanco;
 }
 
 h6 {
-  color: white;
+  color: $c-blanco;
 }
 
 p {
-  color: white;
+  color: $c-blanco;
 }
 
 
 .redes {
-  color: white;
+  color: $c-blanco;
    list-style-type: none;
    display: flex;
    justify-content: flex-end;
