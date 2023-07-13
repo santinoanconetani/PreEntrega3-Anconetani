@@ -1,14 +1,32 @@
 $c-blanco: white;
+$c-gris: rgb(27, 27, 27);
+
+html {
+  box-sizing: border-box ;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 // Mixin para establecer el color blanco
 @mixin blanco {
   color: $c-blanco;
 }
 
+a {
+  color: white;
+}
+
 h1 {
   @include blanco;
   text-align: center;
   font-size: 50px;
+ 
 
   // Nesting de selectores para h1
   h2 {
@@ -36,6 +54,7 @@ h1 {
   }
 }
 
+
 body {
   background-color: black;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -56,7 +75,7 @@ body {
   // Nesting de selectores para .redes
   & .footer {
     display: flex;
-    background-color: rgb(27, 27, 27);
+    background-color:$c-gris;
   }
 }
 
@@ -68,6 +87,6 @@ body {
   // Nesting de selectores para .politica
   & .footer {
     display: flex;
-    background-color: rgb(27, 27, 27);
+    background-color: $c-gris;
   }
 }

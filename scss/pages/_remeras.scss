@@ -15,7 +15,8 @@
   }
 
   .titulo-remera {
-    background-color: rgb(32, 29, 31);
+    background: linear-gradient(black, rgb(43, 42, 42));
+    filter: contrast(120%);
   }
 
 .gallery-container {
@@ -76,21 +77,5 @@
     
   }
 }
-
-@media (min-width: 1200px) {
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-auto-rows: 500px;
-    padding: 20px;
-    grid-gap: 5px;
-  }
-   .productos-ejemplos {
-    display: flex; 
-    flex-direction: column;
-    
-  }
-}
-
 }
 
