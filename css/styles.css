@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Scroll suavizado hacia el tope de la página*/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -10,14 +12,19 @@ html {
   box-sizing: inherit;
 }
 
+/* Mixin para establecer el color blanco*/
+/*Links a las demás secciones de la página*/
 a {
   color: white;
 }
 
+/*Titulo principal*/
 h1 {
   color: white;
   text-align: center;
   font-size: 50px;
+  /*Subtítulos y texto*/
+  /* Nesting de selectores para h1 */
 }
 h1 h2 {
   color: white;
@@ -39,29 +46,34 @@ h1 p {
 }
 
 body {
-  background-color: black;
+  background: linear-gradient(black, rgb(49, 49, 49));
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  /* Nesting de selectores para el body */
 }
 body h2, body h3, body h4, body h5, body h6, body p {
   color: white;
 }
 
+/*Redes sociales*/
 .redes {
   color: white;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
+  /* Nesting de selectores para .redes */
 }
 .redes .footer {
   display: flex;
   background-color: rgb(27, 27, 27);
 }
 
+/*Aclaración de politica de privacidad*/
 .politica {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  /* Nesting de selectores para .politica */
 }
 .politica .footer {
   display: flex;
@@ -84,12 +96,14 @@ body h2, body h3, body h4, body h5, body h6, body p {
     justify-content: space-around;
   }
 }
+/*Barra de navegación*/
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+/*Items en la barra de navegación*/
 nav li {
   display: flex;
   justify-content: center;
@@ -100,6 +114,7 @@ nav li {
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+/*Links en la barra de navegación*/
 nav a {
   text-decoration: none;
   color: white;
@@ -123,13 +138,15 @@ nav li:hover {
     grid-template-columns: repeat(2, 2fr);
   }
 }
-.pelota {
-  width: 250px;
-  height: 250px;
+/*Imágen Principal de la pelota del mundial 2022*/
+.logo-fulbo {
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
 }
 
+/*Seccion de imágenes de productos*/
 .contenido {
   display: flex;
   margin: 60px;
@@ -138,15 +155,19 @@ nav li:hover {
   text-align: center;
 }
 
+/*Titulo principal de la página*/
 .titulo-principal {
   font-size: 40px;
   background-color: rgb(36, 36, 37);
 }
 
+/*Texto de bienvenida*/
 .bienvenida {
   background-color: rgb(17, 18, 19);
+  background: linear-gradient(black, rgb(31, 29, 29));
 }
 
+/*Imágen principal de una gorra*/
 .gorra-fulbo {
   width: 250px;
   height: 250px;
@@ -154,6 +175,7 @@ nav li:hover {
   object-fit: cover;
 }
 
+/*Imágen principal de un collar*/
 .collar-fulbo {
   width: 250px;
   height: 250px;
@@ -161,6 +183,7 @@ nav li:hover {
   object-fit: cover;
 }
 
+/*Imágen principal de una remera*/
 .remera-fulbo {
   width: 250px;
   height: 250px;
@@ -168,17 +191,23 @@ nav li:hover {
   object-fit: cover;
 }
 
+/*Apartado de tienda online (Próximamente)*/
 .tienda-online {
   display: flex;
   align-items: center;
 }
 
+/*Seccion de imágenes de productos*/
 .contenido {
   display: flex;
   margin: 60px;
   align-items: center;
   padding: 5px;
   text-align: center;
+  /*Galería de imágenes*/
+  /*Imágenes de la galería*/
+  /*Media Q para Mobile*/
+  /*Media Q para Tablet*/
 }
 .contenido .bienvenida {
   background-color: rgb(17, 18, 19);
@@ -210,11 +239,11 @@ nav li:hover {
   justify-content: center;
   justify-content: space-around;
 }
-@media (max-width: 750px) {
+@media (max-width: 720px) {
   .contenido .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 350px;
+    grid-auto-rows: 300px;
     padding: 20px;
     grid-gap: 5px;
   }
@@ -237,6 +266,7 @@ nav li:hover {
   }
 }
 
+/*Seccion de imágenes de productos*/
 .contenido {
   display: flex;
   margin: 60px;
@@ -254,6 +284,7 @@ nav li:hover {
   filter: contrast(120%);
 }
 
+/*Galería de imágenes*/
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
@@ -262,6 +293,7 @@ nav li:hover {
   grid-gap: 5px;
 }
 
+/*Imágenes de la galería*/
 .gallery-img {
   width: 90%;
   height: 100%;
@@ -281,11 +313,12 @@ nav li:hover {
   justify-content: space-around;
 }
 
-@media (max-width: 750px) {
+/*Media Q para Mobile*/
+@media (max-width: 720px) {
   .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 350px;
+    grid-auto-rows: 300px;
     padding: 20px;
     grid-gap: 5px;
   }
@@ -294,6 +327,7 @@ nav li:hover {
     flex-direction: column;
   }
 }
+/*Media Q para Tablet*/
 @media (max-width: 1024px) {
   .gallery-container {
     display: grid;
@@ -308,12 +342,17 @@ nav li:hover {
   }
 }
 /* Mixin para estilos comunes */
+/*Seccion de imágenes de productos*/
 .contenido {
   display: flex;
   margin: 60px;
   align-items: center;
   padding: 5px;
   text-align: center;
+  /*Galería de imágenes*/
+  /*Imágenes de la galería*/
+  /*Media Q para Mobile*/
+  /*Media Q para Tablet*/
 }
 .contenido .bienvenida {
   background-color: rgb(17, 18, 19);
@@ -345,11 +384,11 @@ nav li:hover {
   justify-content: center;
   justify-content: space-around;
 }
-@media (min-width: 750px) {
+@media (min-width: 720px) {
   .contenido .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 350px;
+    grid-auto-rows: 300px;
     padding: 20px;
     grid-gap: 5px;
   }

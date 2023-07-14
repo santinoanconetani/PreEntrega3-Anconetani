@@ -1,6 +1,7 @@
 $c-blanco: white;
 $c-gris: rgb(27, 27, 27);
 
+/*Scroll suavizado hacia el tope de la página*/
 html {
   box-sizing: border-box ;
   font-size: 16px;
@@ -13,22 +14,24 @@ html {
   box-sizing: inherit;
 }
 
-// Mixin para establecer el color blanco
+/* Mixin para establecer el color blanco*/
 @mixin blanco {
   color: $c-blanco;
 }
 
+/*Links a las demás secciones de la página*/
 a {
   color: white;
 }
 
+/*Titulo principal*/
 h1 {
   @include blanco;
   text-align: center;
   font-size: 50px;
  
-
-  // Nesting de selectores para h1
+ /*Subtítulos y texto*/
+  /* Nesting de selectores para h1 */
   h2 {
     @include blanco;
   }
@@ -56,15 +59,16 @@ h1 {
 
 
 body {
-  background-color: black;
+  background: linear-gradient(black, rgb(49, 49, 49));
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-  // Nesting de selectores para body
+  /* Nesting de selectores para el body */
   h2, h3, h4, h5, h6, p {
     @include blanco;
   }
 }
 
+/*Redes sociales*/
 .redes {
   @include blanco;
   list-style-type: none;
@@ -72,19 +76,20 @@ body {
   justify-content: flex-end;
   justify-content: space-between;
 
-  // Nesting de selectores para .redes
+  /* Nesting de selectores para .redes */
   & .footer {
     display: flex;
     background-color:$c-gris;
   }
 }
 
+/*Aclaración de politica de privacidad*/
 .politica {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 
-  // Nesting de selectores para .politica
+  /* Nesting de selectores para .politica */
   & .footer {
     display: flex;
     background-color: $c-gris;
