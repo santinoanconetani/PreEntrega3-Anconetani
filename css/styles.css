@@ -46,7 +46,7 @@ h1 p {
 }
 
 body {
-  background: linear-gradient(black, rgb(49, 49, 49));
+  background: linear-gradient(rgb(10, 9, 12), rgb(12, 8, 66));
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   /* Nesting de selectores para el body */
 }
@@ -85,7 +85,7 @@ body h2, body h3, body h4, body h5, body h6, body p {
   background-color: rgb(27, 27, 27);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 720px) {
   .footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -94,6 +94,14 @@ body h2, body h3, body h4, body h5, body h6, body p {
     display: flex;
     justify-content: center;
     justify-content: space-around;
+  }
+  .tienda-online {
+    display: flex;
+    justify-content: center;
+  }
+  .politica {
+    display: flex;
+    justify-content: center;
   }
 }
 /*Barra de navegación*/
@@ -128,14 +136,15 @@ nav li:hover {
   background-color: gray;
   background: linear-gradient(black, grey);
   font-size: 1.7rem;
-  transform: scale(1.2);
+  transform: scale(1.05);
   transition: all 300ms ease-in-out;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 720px) {
   nav ul {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+    width: 95%;
   }
 }
 /*Imágen Principal de la pelota del mundial 2022*/
@@ -144,6 +153,11 @@ nav li:hover {
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/*Link del titulo a la página principal*/
+a {
+  text-decoration: none;
 }
 
 /*Seccion de imágenes de productos*/
@@ -204,6 +218,7 @@ nav li:hover {
   align-items: center;
   padding: 5px;
   text-align: center;
+  /*Link del titulo a la página principal*/
   /*Galería de imágenes*/
   /*Imágenes de la galería*/
   /*Media Q para Mobile*/
@@ -212,8 +227,11 @@ nav li:hover {
 .contenido .bienvenida {
   background-color: rgb(17, 18, 19);
 }
+.contenido a {
+  text-decoration: none;
+}
 .contenido .titulo-accesorios {
-  background: linear-gradient(black, rgb(63, 60, 60));
+  background: linear-gradient(rgb(29, 28, 28), gold);
   filter: contrast(120%);
 }
 .contenido .gallery-container {
@@ -279,8 +297,13 @@ nav li:hover {
   background-color: rgb(17, 18, 19);
 }
 
+/*Link del titulo a la página principal*/
+a {
+  text-decoration: none;
+}
+
 .titulo-gorras {
-  background: linear-gradient(rgb(24, 23, 23), rgb(65, 63, 63));
+  background: linear-gradient(rgb(70, 75, 158), rgb(93, 52, 139));
   filter: contrast(120%);
 }
 
@@ -342,6 +365,11 @@ nav li:hover {
   }
 }
 /* Mixin para estilos comunes */
+/*Link del titulo a la página principal*/
+a {
+  text-decoration: none;
+}
+
 /*Seccion de imágenes de productos*/
 .contenido {
   display: flex;
@@ -358,7 +386,7 @@ nav li:hover {
   background-color: rgb(17, 18, 19);
 }
 .contenido .titulo-remera {
-  background: linear-gradient(black, rgb(43, 42, 42));
+  background: linear-gradient(rgb(26, 36, 131), rgb(3, 3, 3));
   filter: contrast(120%);
 }
 .contenido .gallery-container {
@@ -384,7 +412,7 @@ nav li:hover {
   justify-content: center;
   justify-content: space-around;
 }
-@media (min-width: 720px) {
+@media (max-width: 720px) {
   .contenido .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

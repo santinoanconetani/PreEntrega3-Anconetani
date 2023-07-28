@@ -11,8 +11,13 @@
   background-color: rgb(17, 18, 19);
 }
 
+/*Link del titulo a la página principal*/
+a {
+  text-decoration: none;
+}
+
 .titulo-gorras {
-   background: linear-gradient(rgb(24, 23, 23), rgb(65, 63, 63));
+   background: linear-gradient(rgb(70, 75, 158), rgb(93, 52, 139));
    filter: contrast(120%);
 }
 

@@ -6,6 +6,11 @@
   object-fit: cover;
 }
 
+/*Link del titulo a la página principal*/
+a {
+  text-decoration: none;
+}
+
 /*Seccion de imágenes de productos*/
 .contenido {
   display: flex;
