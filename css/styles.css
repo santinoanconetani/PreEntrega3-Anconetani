@@ -178,7 +178,7 @@ a {
 /*Texto de bienvenida*/
 .bienvenida {
   background-color: rgb(17, 18, 19);
-  background: linear-gradient(black, rgb(31, 29, 29));
+  background: linear-gradient(black, rgba(19, 17, 139, 0.377));
 }
 
 /*Imágen principal de una gorra*/
@@ -231,7 +231,7 @@ a {
   text-decoration: none;
 }
 .contenido .titulo-accesorios {
-  background: linear-gradient(rgb(29, 28, 28), gold);
+  background: linear-gradient(rgb(19, 15, 41), rgb(151, 141, 5));
   filter: contrast(120%);
 }
 .contenido .gallery-container {
@@ -303,7 +303,7 @@ a {
 }
 
 .titulo-gorras {
-  background: linear-gradient(rgb(70, 75, 158), rgb(93, 52, 139));
+  background: linear-gradient(rgb(160, 157, 15), rgb(59, 65, 184));
   filter: contrast(120%);
 }
 
@@ -386,7 +386,7 @@ a {
   background-color: rgb(17, 18, 19);
 }
 .contenido .titulo-remera {
-  background: linear-gradient(rgb(26, 36, 131), rgb(3, 3, 3));
+  background: linear-gradient(rgb(24, 34, 124), rgb(25, 26, 32));
   filter: contrast(120%);
 }
 .contenido .gallery-container {
