@@ -61,3 +61,17 @@ a {
  display: flex;
  align-items:center;
 }
+
+@media (min-width:720px) {
+  .contenido {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width:350px) {
+   .contenido {
+    display: flex;
+    justify-content: center;
+  }
+}
